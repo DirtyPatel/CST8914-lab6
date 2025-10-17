@@ -5,7 +5,6 @@
     <title>Hi/Max Real Estate – Accessible by Design</title>
 
     <script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/wet-boew/js/i18n/en.min.js"></script>
-    <meta charset="utf-8" />
     <script>
       document.write(
         wet.builder.refTop({
@@ -132,33 +131,38 @@
 
         <article aria-labelledby="stats-heading">
           <h3 id="stats-heading">Stats of Hi/Max</h3>
-          <table>
-            <caption>
-              Property Sales and Average Prices
-            </caption>
+
+          <table class="table table-bordered table-striped table-dark">
+
             <thead>
               <tr>
-                <th id="year">Year</th>
-                <th id="qc">Quebec</th>
-                <th id="on">Ontario</th>
-                <th id="house">Single House</th>
-                <th id="condo">Condo</th>
+                <th scope="col" rowspan="2" class="text-center align-top">
+                  Year
+                </th>
+                <th scope="colgroup" colspan="2">Sold Properties</th>
+                <th scope="colgroup" colspan="2">Average Selling Price</th>
+              </tr>
+              <tr>
+                <th scope="col">Quebec</th>
+                <th scope="col">Ontario</th>
+                <th scope="col">Single House</th>
+                <th scope="col">Condo</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td headers="year">2021</td>
-                <td headers="qc">50</td>
-                <td headers="on">100</td>
-                <td headers="house">$500,000</td>
-                <td headers="condo">$189,000</td>
+                <th scope="row">2021</th>
+                <td>50</td>
+                <td>100</td>
+                <td>$500,000</td>
+                <td>189,000</td>
               </tr>
               <tr>
-                <td headers="year">2022</td>
-                <td headers="qc">100</td>
-                <td headers="on">200</td>
-                <td headers="house">$780,000</td>
-                <td headers="condo">$240,000</td>
+                <th scope="row">2022</th>
+                <td>100</td>
+                <td>200</td>
+                <td>$780,000</td>
+                <td>240,000</td>
               </tr>
             </tbody>
           </table>
@@ -226,6 +230,7 @@
         </figure>
       </section>
     </main>
+    <footer role="contentinfo">
     <div id="wb-info" class="wb-navcurr-inited">
       <div class="gc-sub-footer">
         <div class="container d-flex align-items-center">
@@ -261,6 +266,7 @@
         </div>
       </div>
     </div>
+	</footer>
     <!-- end of footer-->
 
     <script>
