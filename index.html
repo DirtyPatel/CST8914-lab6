@@ -1,17 +1,25 @@
 <!DOCTYPE html>
-<html class="js backgroundsize borderimage csstransitions fontface svg" lang="en" dir="ltr">
+<html
+  class="js backgroundsize borderimage csstransitions fontface svg"
+  dir="ltr"
+  lang="en"
+>
   <head>
     <meta charset="utf-8" />
-    <title>Hi/Max Realty – Home Page</title>
+    <title>Homepage – Hi/Max Real Estate</title>
 
     
     <script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/wet-boew/js/i18n/en.min.js"></script>
     <script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/wet-boew/js/deps/jsonpointer.min.js"></script>
-
     <script>
-      document.write(wet.builder.refTop({ isApplication: true }));
+      document.write(
+        wet.builder.refTop({
+          isApplication: true,
+        })
+      );
     </script>
 
+    
     <link
       rel="apple-touch-icon"
       sizes="57x57 72x72 114x114 144x144 150x150"
@@ -36,23 +44,11 @@
         font-family: "Noto Sans", Arial, sans-serif;
       }
 
-      .social a svg {
-        width: 28px;
-        fill: #868686;
-        transition: fill 0.2s ease;
-      }
-
-      .social a:hover svg {
-        fill: #2b5ea5;
-      }
-
       table {
         border-collapse: collapse;
-        margin: 40px auto;
-        width: 100%;
-        max-width: 650px;
+        margin: 40px 0;
         text-align: center;
-        font-weight: bold;
+        font-weight: 600;
       }
 
       th,
@@ -61,134 +57,193 @@
         border: 1px solid #a9b2c0;
       }
 
-      .table-main {
-        background-color: #f1f1f1;
+      .primaryTitle {
+        background-color: #efefef;
       }
 
-      .table-sub {
-        background-color: #5a5a5a;
+      .secondaryTitle {
+        background-color: #626161;
         color: #fff;
       }
 
-      img {
-        width: 100%;
-        border-radius: 4px;
-        margin-bottom: 10px;
+      a {
+        color: #2b5ea5;
+        text-decoration: underline;
+      }
+
+      a:hover {
+        text-decoration: none;
+      }
+
+      .social a svg {
+        width: 28px;
+        fill: #8e8f97;
+      }
+
+      .row img {
+        border-radius: 3px;
+        margin-bottom: 8px;
+      }
+
+      footer ul {
+        list-style: none;
+        padding-left: 0;
       }
     </style>
   </head>
 
   <body>
+    
     <header>
       <div class="app-bar">
         <div class="container">
           <div class="row">
             <section class="col-xs-12">
-              <h2 class="wb-inv">Hi/Max Realty</h2>
-              <a class="app-name" href="index.html">Hi/Max Realty</a>
+              <h2 class="wb-inv">Application title</h2>
+              <a class="app-name" href="./index-en.html">Hi/Max Real Estate</a>
             </section>
           </div>
         </div>
       </div>
 
-      <nav class="wb-menu visible-md visible-lg" aria-label="Site Navigation">
+      <nav
+        aria-label="Main navigation"
+        id="wb-sm"
+        class="wb-menu visible-md visible-lg"
+        typeof="SiteNavigationElement"
+      >
         <div class="pnl-strt container nvbar">
-          <h2 class="wb-inv">Main Menu</h2>
-          <ul class="list-inline menu">
-            <li><a href="index.html" class="item">Home</a></li>
-            <li><a href="buying.html" class="item">Buying</a></li>
-            <li><a href="selling.html" class="item">Selling</a></li>
-            <li><a href="faq.html" class="item">FAQs</a></li>
-            <li><a href="contact.html" class="item">Contact</a></li>
-          </ul>
+          <h2>Site Menu</h2>
+          <div class="row">
+            <ul class="list-inline menu">
+              <li><a class="item" href="index-en.html">Home</a></li>
+              <li><a class="item" href="internet-en.html">Buying</a></li>
+              <li><a class="item" href="intranet-en.html">Selling</a></li>
+              <li><a class="item" href="faq-en.html">FAQs</a></li>
+              <li><a class="item" href="contact-en.html">Contact us</a></li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
 
-    <main property="mainContentOfPage" class="container" aria-label="Main content">
-      <h1>Welcome to Hi/Max Realty</h1>
+    
+    <main
+      class="container"
+      property="mainContentOfPage"
+      aria-label="Homepage content"
+    >
+      <h1>Welcome</h1>
 
-      <section aria-labelledby="intro">
-        <h2 id="intro">Your Trusted Real Estate Partner</h2>
+      <section>
+        <h2>Hi/Max Real Estate & Houses</h2>
         <p>
-          Whether you're buying or selling, our experts help make your real estate journey simple and successful.
-          Voted Canada’s #1 trusted realty team six years in a row.
+          Buying or selling a home is likely the largest and most important
+          transaction you’ll ever make. That’s why so many trust Hi/Max Real
+          Estate — voted #1 Most Trusted Real Estate Agents in Canada six years
+          running.
         </p>
-        <p><a href="#" class="btn btn-primary">Start Exploring</a></p>
+        <p><a href="#">Let’s get started</a></p>
       </section>
 
       <div class="row">
         <aside class="col-md-4 pull-right">
-          <h3>Helpful Links</h3>
-          <p>Find the tools and insights to help you move confidently.</p>
+          <h3>Related resources</h3>
+          <p>
+            It's time to sell and find the next "one." Let us help you navigate
+            the ins & outs of your next move.
+          </p>
           <ul>
-            <li><a href="#">Upgrade your home</a></li>
-            <li><a href="#">Smart buying tips</a></li>
-            <li><a href="#">Check your home's value</a></li>
+            <li><a href="#">Looking for an upgrade?</a></li>
+            <li><a href="#">Buying tips</a></li>
+            <li><a href="#">How much is your current home worth?</a></li>
           </ul>
         </aside>
 
-        <div class="col-md-8">
-          <h3>Why Choose Hi/Max?</h3>
+        <section class="col-md-8">
+          <h3>Why choose Hi/Max</h3>
           <p>
-            Our agents are community-focused and customer-driven—helping Canadians achieve their property goals
-            coast to coast.
+            Hi/Max agents go above and beyond — always striving to be the best
+            they can be. Our team is community-focused and committed to results.
           </p>
 
-          <h4>Market Insights</h4>
+          <h4>Hi/Max Performance Overview</h4>
           <table>
             <thead>
               <tr>
-                <th rowspan="2" class="table-main">Year</th>
-                <th colspan="2" class="table-main">Homes Sold</th>
-                <th colspan="2" class="table-main">Avg. Price</th>
+                <th class="primaryTitle" rowspan="2" scope="col">Year</th>
+                <th class="primaryTitle" colspan="2" scope="colgroup">
+                  Sold Properties
+                </th>
+                <th class="primaryTitle" colspan="2" scope="colgroup">
+                  Average Selling Price
+                </th>
               </tr>
               <tr>
-                <th class="table-sub">Quebec</th>
-                <th class="table-sub">Ontario</th>
-                <th class="table-sub">House</th>
-                <th class="table-sub">Condo</th>
+                <th class="secondaryTitle" scope="col">Quebec</th>
+                <th class="secondaryTitle" scope="col">Ontario</th>
+                <th class="secondaryTitle" scope="col">Single house</th>
+                <th class="secondaryTitle" scope="col">Condo</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <th scope="row">2023</th>
-                <td>120</td>
-                <td>210</td>
-                <td>$780,000</td>
-                <td>$255,000</td>
+                <th class="secondaryTitle" scope="row">2021</th>
+                <td>50</td>
+                <td>100</td>
+                <td>$500,000</td>
+                <td>189,000</td>
               </tr>
               <tr>
-                <th scope="row">2024</th>
-                <td>145</td>
-                <td>260</td>
-                <td>$825,000</td>
-                <td>$295,000</td>
+                <th class="secondaryTitle" scope="row">2022</th>
+                <td>100</td>
+                <td>200</td>
+                <td>$780,000</td>
+                <td>249,000</td>
               </tr>
             </tbody>
           </table>
-        </div>
+        </section>
       </div>
 
-      <section aria-labelledby="resources">
-        <h3 id="resources">More from Hi/Max Realty</h3>
+      <section>
+        <h3>More Resources on Choosing the Right Agent</h3>
         <div class="row">
           <div class="col-md-4">
-            <img src="1.png" alt="House for sale" />
-            <h4><a href="#">DIY vs Agent: The True Costs</a></h4>
-            <p>Before you go solo, see why hiring an expert might save you time and money.</p>
+            <img src="./1.png" alt="House for sale" />
+            <h4>
+              <a href="#">What Are The Risks of Selling a Home Yourself?</a>
+            </h4>
+            <p>
+              We’ve all seen the stories of DIY sellers who quickly learned that
+              some projects are best left to professionals.
+            </p>
             <a href="#">Read more</a>
           </div>
+
           <div class="col-md-4">
-            <img src="2.png" alt="Agent consulting clients" />
-            <h4><a href="#">Top Questions to Ask Before Hiring</a></h4>
-            <p>Find the right agent with these must-ask questions for a smooth experience.</p>
+            <img src="./2.png" alt="Real estate meeting" />
+            <h4>
+              <a href="#"
+                >7 Questions to Ask a Real Estate Agent Before You Commit</a
+              >
+            </h4>
+            <p>
+              Research shows there are major benefits to working with an
+              experienced real estate agent — including higher sale prices.
+            </p>
             <a href="#">Read more</a>
           </div>
+
           <div class="col-md-4">
-            <img src="3.png" alt="Realtor showing a condo" />
-            <h4><a href="#">8 Perks of Hiring a Realtor</a></h4>
-            <p>Negotiation power, local expertise, and peace of mind—all in one place.</p>
+            <img src="./3.png" alt="Agent showing home" />
+            <h4>
+              <a href="#">8 Reasons to Hire an Agent When Selling Your Home</a>
+            </h4>
+            <p>
+              From pricing to paperwork, there are many reasons to have an agent
+              by your side when selling your home.
+            </p>
             <a href="#">Read more</a>
           </div>
         </div>
@@ -197,46 +252,63 @@
       <div class="pagedetails">
         <dl id="wb-dtmd">
           <dt>Date modified:</dt>
-          <dd><time property="dateModified">2025-10-17</time></dd>
+          <dd><time property="dateModified">2023-10-13</time></dd>
         </dl>
       </div>
     </main>
 
-    <footer id="wb-info" aria-label="Footer">
+    
+    <footer
+      aria-label="Contact and Information"
+      id="wb-info"
+      class="wb-navcurr-inited"
+    >
       <div class="gc-sub-footer">
         <div class="container d-flex align-items-center">
           <div>
-            <h3 class="wb-inv">Hi/Max Realty</h3>
+            <h3 class="wb-inv" id="aboutWebApp">Hi/Max Real Estate</h3>
             <ul>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Accessibility</a></li>
-              <li class="social">
+              <li><a href="#">About the company</a></li>
+              <li><a href="#">Privacy policy</a></li>
+              <li><a href="#">Accessibility statement</a></li>
+              <li style="list-style: none" class="social">
                 <a href="#" aria-label="Follow us on Twitter">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                    role="img"
+                  >
                     <title>Twitter</title>
                     <path
-                      d="M400 32H48C21.5 32 0 53.5 0 80v352c0
-                      26.5 21.5 48 48 48h352c26.5 0 48-21.5
-                      48-48V80c0-26.5-21.5-48-48-48zM351
-                      190.8a83.9 83.9 0 01-.2 8.5c0 86.7-66
-                      186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4
-                      5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4
-                      81.4-28-28.8-.6-53-19.5-61.3-45.5
-                      10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8
-                      c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 01-29.2-54.6
-                      c0-12.2 3.2-23.4 8.9-33.1
-                      32.3 39.8 80.8 65.8 135.2 68.6
-                      -9.3-44.5 24-80.6 64-80.6 18.9 0 35.9
-                      7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8
-                      -4.9 15.2-15.2 28-28.8 36.1
-                      13.2-1.4 26-5.1 37.8-10.2
+                      d="M400 32H48C21.5 32 0 53.5 0 80v352c0 
+                      26.5 21.5 48 48 48h352c26.5 0 48-21.5 
+                      48-48V80c0-26.5-21.5-48-48-48zm-48.9 
+                      158.8c.2 2.8.2 5.7.2 8.5 0 
+                      86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 
+                      5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28 
+                      -28.8-.6-53-19.5-61.3-45.5 
+                      10.1 1.5 19.2 1.5 29.6-1.2 
+                      -30-6.1-52.5-32.5-52.5-64.4v-.8 
+                      c8.7 4.9 18.9 7.9 29.6 8.3a65.447 
+                      65.447 0 0 1-29.2-54.6c0-12.2 
+                      3.2-23.4 8.9-33.1 32.3 39.8 80.8 
+                      65.8 135.2 68.6-9.3-44.5 24-80.6 
+                      64-80.6 18.9 0 35.9 7.9 47.9 
+                      20.7 14.8-2.8 29-8.3 41.6-15.8 
+                      -4.9 15.2-15.2 28-28.8 36.1 
+                      13.2-1.4 26-5.1 37.8-10.2 
                       -8.9 13.1-20.1 24.7-32.9 34z"
-                    />
+                    ></path>
                   </svg>
                 </a>
               </li>
             </ul>
+          </div>
+
+          <div class="col-xs-6 visible-sm visible-xs tofpg">
+            <a href="#wb-cont"
+              >Top of Page <span class="glyphicon glyphicon-chevron-up"></span
+            ></a>
           </div>
         </div>
       </div>
