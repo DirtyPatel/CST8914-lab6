@@ -5,8 +5,6 @@
   <title>Hi/Max Real Estate – Accessible by Design</title>
 
 	<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/wet-boew/js/i18n/en.min.js"></script>
-	<script
-		src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/wet-boew/js/deps/jsonpointer.min.js"></script>
 	<meta charset="utf-8">
 	<script>
 		document.write(wet.builder.refTop({
@@ -29,48 +27,40 @@
 </head>
 
 <body>
+	<!-- start of header -->
+<header role="banner" aria-label="Main site header">
+  <div class="app-bar">
+    <div class="container">
+      <div class="row">
+        <section class="col-xs-12">
+          <h1 class="wb-inv">Hi/Max Real Estate</h1>
+          <a class="app-name" href="./index-en.html">Hi/Max Real Estate</a>
+        </section>
+      </div>
+    </div>
+  </div>
 
-	</div>
-	<div> <!-- start of header-->
-			<header role="banner" aria-label="Main site header">
-				<div class="app-bar">
-			<div class="container">
-				<div class="row">
-					<section class="col-xs-12">
-						<h2 class="wb-inv">Name of Web application</h2>
-						<a class="app-name" href="./index-en.html">Hi/Max Real Estate</a>
-					</section>
-				</div>
-			</div>
-		</div>
-		</header>
+  <nav role="navigation" aria-label="Primary navigation">
+    <div id="wb-sm"
+         data-ajax-replace="../ajax/cdtsMenu-en.html"
+         data-trgt="mb-pnl"
+         class="wb-menu visible-md visible-lg">
+      <div class="pnl-strt container nvbar">
+        <h2>Topics menu</h2>
+        <div class="row">
+          <ul role="menubar" class="list-inline menu">
+			<li role="none"><a href="index-en.html" role="menuitem">Home</a></li>
+			<li role="none"><a href="internet-en.html" role="menuitem">Buying</a></li>
+			<li role="none"><a href="intranet-en.html" role="menuitem">Selling</a></li>
+			<li role="none"><a href="faq-en.html" role="menuitem">FAQs</a></li>
+			<li role="none"><a href="contact-en.html" role="menuitem">Contact us</a></li>
+			</ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
 
-		<nav role="navigation" aria-label="Primary navigation">
-		<div id="wb-sm" data-ajax-replace="../ajax/cdtsMenu-en.html" data-trgt="mb-pnl"
-			class="wb-menu visible-md visible-lg wb-init wb-data-ajax-replace-inited wb-menu-inited wb-navcurr-inited"
-			typeof="SiteNavigationElement">
-			<div class="pnl-strt container nvbar">
-				<h2>Topics menu</h2>
-				<div class="row">
-					<ul role="menubar" class="list-inline menu">
-						<li><a class="item" href="index-en.html" tabindex="0" aria-posinset="1" aria-setsize="7"
-								role="menuitem">Home</a></li>
-						<li><a class="item" href="internet-en.html" tabindex="-1" aria-posinset="2" aria-setsize="7"
-								role="menuitem">Buying</a></li>
-						<li><a class="item" href="intranet-en.html" tabindex="-1" aria-posinset="3" aria-setsize="7"
-								role="menuitem">Selling</a></li>
-						<li><a class="item" href="faq-en.html" tabindex="-1" aria-posinset="6" aria-setsize="7"
-								role="menuitem">FAQs</a></li>
-						<li><a class="item" href="contact-en.html" tabindex="-1" aria-posinset="7" aria-setsize="7"
-								role="menuitem">Contact us</a></li>
-					</ul>
-				</div>
-			</div>
-			
-
-		</div> <!-- end of main navigation-->
-
-	</div> <!-- end of header-->
 
 	<main id="main-content" role="main" aria-label="Main content" class="container">
 	<!-- Content A -->
@@ -95,6 +85,7 @@
       <li><a href="#">How much is your current home worth?</a></li>
     </ul>
   </aside>
+
 	<!-- Content C -->
   <section aria-labelledby="why-heading">
     <h2 id="why-heading">Why Choose Hi/Max</h2>
@@ -106,33 +97,34 @@
     <article aria-labelledby="stats-heading">
       <h3 id="stats-heading">Stats of Hi/Max</h3>
       <table>
-        <caption>Property Sales and Average Prices</caption>
-        <thead>
-          <tr>
-            <th id="year">Year</th>
-            <th id="sold">Sold Properties</th>
-            <th id="avg">Average Selling Price</th>
-            <th id="house">Single House</th>
-            <th id="condo">Condo</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td headers="year">2021</td>
-            <td headers="sold">50</td>
-            <td headers="avg">$500,000</td>
-            <td headers="house">Quebec</td>
-            <td headers="condo">$189,000</td>
-          </tr>
-          <tr>
-            <td headers="year">2022</td>
-            <td headers="sold">100</td>
-            <td headers="avg">$780,000</td>
-            <td headers="house">Ontario</td>
-            <td headers="condo">$240,000</td>
-          </tr>
-        </tbody>
-      </table>
+  <caption>Property Sales and Average Prices</caption>
+  <thead>
+    <tr>
+      <th id="year">Year</th>
+      <th id="qc">Quebec</th>
+      <th id="on">Ontario</th>
+      <th id="house">Single House</th>
+      <th id="condo">Condo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td headers="year">2021</td>
+      <td headers="qc">50</td>
+      <td headers="on">100</td>
+      <td headers="house">$500,000</td>
+      <td headers="condo">$189,000</td>
+    </tr>
+    <tr>
+      <td headers="year">2022</td>
+      <td headers="qc">100</td>
+      <td headers="on">200</td>
+      <td headers="house">$780,000</td>
+      <td headers="condo">$240,000</td>
+    </tr>
+  </tbody>
+</table>
+
     </article>
   </section>
 
@@ -147,13 +139,16 @@
   </article>
 
   <!-- Content F -->
-  <section>
-    <h2>7 Questions to Ask a Real Estate Agent Before You Commit</h2>
-    <p>
-      According to research by the National Association of Realtors, there are considerable benefits
-      to working with a real estate agent, including higher sale prices.
-    </p>
-  </section>
+<section>
+  <figure>
+    <img src="1.png" alt="For sale sign hanging from a tree branch">
+    <figcaption>
+      <h2>What Are the Risks of Selling a Home Yourself?</h2>
+      <p>We’ve all seen the videos, read the stories, and gasped at the images of people who thought they could conquer a project that would have been better left to the professionals.</p>
+      <a href="#">Read more</a>
+    </figcaption>
+  </figure>
+</section>
 	
   <!-- Content G -->
   <section>
@@ -163,19 +158,20 @@
       here are eight very valid reasons to have a real estate agent on speed dial.
     </p>
   </section>
-				<p>Content H here</p>
 
-			</div>
-		</div>
-		<div class="pagedetails">
-			<dl id="wb-dtmd">
-				<dt>Date modified: </dt>
-				<dd><time property="dateModified">2023-10-13</time></dd>
-			</dl>
-		</div>
+	<!-- Content H -->
+<section>
+  <figure>
+    <img src="3.png" alt="Agent showing a home for sale">
+    <figcaption>
+      <h2>8 Reasons to Hire an Agent When Selling Your Home</h2>
+      <p>With all the many different moving parts involved in selling your home, here are eight very valid reasons to have a real estate agent on speed dial.</p>
+      <a href="#">Read more</a>
+    </figcaption>
+  </figure>
+</section>
 
-
-	</main>
+</main>
 	<div id="wb-info" class=" wb-navcurr-inited">
 		<div class="gc-sub-footer">
 			<div class="container d-flex align-items-center">
